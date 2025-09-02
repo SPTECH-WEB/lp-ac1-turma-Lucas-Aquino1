@@ -41,11 +41,8 @@ public class Turma {
 
         public void transferir(Turma destino, Integer qtdATransferir){
             if(destino != null && destino.ativa && ativa && qtdATransferir != null && qtdATransferir > 0 && qtdATransferir <= destino.qtdAluno){
-
                 destino.qtdAluno += qtdATransferir;
                 qtdAluno = destino.qtdAluno - qtdATransferir;
-
-                // VOLTAR PARA CORRIGIR
             }
         }
 
